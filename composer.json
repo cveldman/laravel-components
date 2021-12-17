@@ -1,0 +1,32 @@
+{
+    "name": "veldman/laravel-components",
+    "description": "description",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Corné Veldman",
+            "email": "cveldman@hotmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Veldman\\Components\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Veldman\\Components\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Veldman\\Components\\ComponentsServiceProvider"
+            ]
+        }
+    }
+}

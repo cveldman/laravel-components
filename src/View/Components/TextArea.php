@@ -21,6 +21,6 @@ class TextArea extends Component
 
     public function render()
     {
-        return view('components::components.input');
+        return view('components::components.textarea');
     }
 }

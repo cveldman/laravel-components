@@ -2,6 +2,7 @@
 
 namespace Veldman\Components;
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Veldman\Components\View\Components\A;
@@ -40,5 +41,9 @@ class ComponentsServiceProvider extends ServiceProvider
         Blade::component('table', Table::class);
         Blade::component('row', Row::class);
         Blade::component('cell', Cell::class);
+
+        Route::middleware('web')->group(function() {
+            Route::view('components', 'components::test');
+        });
     }
 }

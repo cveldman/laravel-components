@@ -1,7 +1,9 @@
-<div class="form-group">
-    <x-label :for="$name" :label="$label"></x-label>
+<div>
+    <x-label :for="$name">{{ $label }}</x-label>
 
-    <input type="{{ $type }}" name="{{ $name }}" class="form-control @error($name) is-invalid @enderror" id="{{ $name }}" value="{{ $value }}">
+    <div class="mt-1 relative rounded-md shadow-sm">
+        <input type="{{ $type }}" name="{{ $name }}" value="{{ $value }}" id="{{ $name }}">
+    </div>
 
     <x-error :name="$name"></x-error>
 </div>

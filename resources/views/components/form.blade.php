@@ -1,6 +1,9 @@
 <form action="{{ $action }}" method="{{ $method == 'get' ? 'get' : 'post' }}">
     @method($method)
-    @csrf
+
+    @if($method != 'get)
+        @csrf
+    @endif
 
     {{ $slot }}
 </form>

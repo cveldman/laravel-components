@@ -9,7 +9,7 @@ class Form extends Component
     public $action;
     public $method;
 
-    public function __construct($action, $method)
+    public function __construct($action = null, $method = 'get')
     {
         $this->action = $action;
         $this->method = $method;

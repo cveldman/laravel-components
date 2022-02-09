@@ -43,5 +43,6 @@ class ComponentsServiceProvider extends ServiceProvider
         Blade::component('row', Row::class);
         Blade::component('cell', Cell::class);
         Blade::component('avatar-cell', AvatarCell::class);
+        Blade::component('a-cell', ACell::class);
     }
 }

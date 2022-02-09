@@ -2,10 +2,10 @@
 
 namespace Veldman\Components;
 
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Veldman\Components\View\Components\A;
+use Veldman\Components\View\Components\ACell;
 use Veldman\Components\View\Components\AvatarCell;
 use Veldman\Components\View\Components\Cell;
 use Veldman\Components\View\Components\Form;

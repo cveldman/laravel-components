@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Veldman\Components\View\Components\A;
+use Veldman\Components\View\Components\AvatarCell;
 use Veldman\Components\View\Components\Cell;
 use Veldman\Components\View\Components\Form;
 use Veldman\Components\View\Components\Input;
@@ -41,9 +42,6 @@ class ComponentsServiceProvider extends ServiceProvider
         Blade::component('table', Table::class);
         Blade::component('row', Row::class);
         Blade::component('cell', Cell::class);
-
-        Route::middleware('web')->group(function() {
-            Route::view('components', 'components::test');
-        });
+        Blade::component('avatar-cell', AvatarCell::class);
     }
 }

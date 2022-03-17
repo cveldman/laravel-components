@@ -16,7 +16,7 @@ class Input extends Component
         $this->type = $type;
         $this->name = $name;
         $this->value = old($name, $value);
-        $this->label = ucfirst(str_replace("_", " ", $name));
+        $this->label = $label == null ? ucfirst(str_replace("_", " ", $name)) : $label;
     }
 
     public function render()
